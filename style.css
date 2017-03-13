@@ -20,6 +20,9 @@ body {
     margin: 0 auto;
 }
 
+.bold-text {
+    font-weight: bold;
+}
 
 #main {
    background: url(images/header-image.png) repeat-x;         
@@ -37,7 +40,8 @@ body {
 }
 
 #header {
-    padding-top: 40px;
+    padding-top: 38px;
+
 }
 
 ul#menu{
@@ -82,7 +86,6 @@ ul#menu li {
  
 #content h4 {
     font-size: 20px;
-    font-weight: normal; 
     padding-top: 20px;
 }
  
@@ -99,4 +102,42 @@ ul#menu li {
     color: #0f6c8d;
     font-weight: bold;
     text-decoration: none; 
+}
+
+services-main {
+    float: left;
+    
+}
+
+ul#services{
+    list-style: none;
+    padding-top: 15px;
+    display: inline-block;
+}
+
+ul#services li {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    float: left;
+}
+
+specialties-main {
+    float: left;
+  
+}
+
+ul#specialties{
+    list-style: none;
+    padding-top: 15px; 
+    display: inline-block;
+}
+
+ul#specialties li {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    float: left;
 }
