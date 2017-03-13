@@ -12,7 +12,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, img {margin:0px; padding:0px; }
 
 body { 
     font-family: Arial, Helvetica, sans-serif; 
-    background: lightskyblue;
+    background: snow;
 }
 
 .container {
@@ -140,4 +140,15 @@ ul#specialties li {
     padding-right: 20px;
     padding-bottom: 40px;
     float: left;
+}
+
+textarea#form-message {
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+}
+
+input {
+    border: 3px solid #cccccc;
 }
