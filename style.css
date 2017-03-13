@@ -24,3 +24,40 @@ body { font-family: Arial, Helvetica, sans-serif; }
 #main {
    background: url(images/header-image.png) repeat-x;         
 }
+
+#logo {
+    background: url(images/logo.png) no-repeat;
+    height: 84px;
+    width: 235px;
+    float: left;
+}
+
+#logo h1 {
+    text-indent: -9999px;
+}
+
+#header {
+    padding-top: 40px;
+}
+
+#tagline {
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+#tagline h3 {font-size: 25px; color: black;}
+
+ul#menu{
+    list-style: none;
+}
+
+ul#menu li a {
+    font-size: 30px;
+    color: crimson;
+    text-decoration: none;
+}
+
+ul#menu li {
+    float: left;
+}
