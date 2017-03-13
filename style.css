@@ -10,16 +10,16 @@ and open the template in the editor.
 
 body, div, h1, h2, h3, h4, h5, h6, p, ul, img {margin:0px; padding:0px; }
 
-body { font-family: Arial, Helvetica, sans-serif; }
+body { 
+    font-family: Arial, Helvetica, sans-serif; 
+    background: snow;
+}
 
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
-.grey-background {
-    background-color: gray;
-}
 
 #main {
    background: url(images/header-image.png) repeat-x;         
@@ -40,24 +40,63 @@ body { font-family: Arial, Helvetica, sans-serif; }
     padding-top: 40px;
 }
 
-#tagline {
-    float: left;
-    padding-top: 15px;
-    padding-left: 10px;
-}
-
-#tagline h3 {font-size: 25px; color: black;}
-
 ul#menu{
     list-style: none;
+    padding-top: 15px;
 }
 
 ul#menu li a {
-    font-size: 30px;
-    color: crimson;
-    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+ul#menu li a:hover {
+    font-size: 18px;
+    color: red;
+    text-decoration: none; 
+    font-weight: bold;
 }
 
 ul#menu li {
     float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+#content {
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+#content h2 {
+    font-size: 35px;
+}
+ 
+#content h3 {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ 
+#content h4 {
+    font-size: 18px;
+    font-weight: normal; 
+    padding-top: 20px;
+}
+ 
+#content p {
+    font-size: 14px;
+}
+ 
+#content small {
+    font-size: 12px;
+}
+ 
+#content a {
+    color: #0f6c8d;
+    font-weight: bold;
+    text-decoration: none; 
 }
