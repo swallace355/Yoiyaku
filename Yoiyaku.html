@@ -1,3 +1,23 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "email@example.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -7,6 +27,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+        <script type="text/javascript"  src="form-validate.js"></script> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <meta charset="windows-1252">
@@ -88,23 +109,23 @@
                     <hr>
                     
                     <h3 class="bold-text" align="center">Contact Me</h3>
-                    <div id="contact-form" class="container">
-                        <form action="mailto:swallace35@gmail.com" method="post" enctype="text/plain">
+                    <div id="contact" class="container">
+                        <form name="contactform" action="form-to-email.php" method="post" enctype="text/plain" onsubmit="return(validate());">
 
-                            <p>Name:</p>
+                            <p>Name*</p>
                             <input type="text" id="form-name" name="name" size="25" maxlength="50" placeholder="Your name.." required/><br>
                             
-                            <p>Email:</p>
+                            <p>Email*</p>
                             <input type ="email" id="form-email" name="email" size="25" maxlength="50" placeholder="Your email.." required /><br>
                             
-                            <p>Message:</p>
+                            <p>Message*</p>
                             <textarea id="form-message" name="message" placeholder="Please leave your message.." required></textarea><br>
 
                             <input type="submit" value="Send" />
 
                         </form>
 
-                    </div><!--End of Contact Form-->
+                    </div><!--End of Contact-->
                     
                 </div><!--End of Content-->
             </div><!--End Main Container-->
