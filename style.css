@@ -188,3 +188,11 @@ input {
 .glyphicon.glyphicon-chevron-left{
    color:blue;
 }
+
+#footer {
+    background: url(images/footer.png) repeat-x;
+    padding-top: 20px;
+    padding-bottom:60px;
+    margin-top: 40px;
+    color: black; 
+}
