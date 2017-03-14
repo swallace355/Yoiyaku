@@ -152,3 +152,39 @@ textarea#form-message {
 input {
     border: 3px solid #cccccc;
 }
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    color: black;
+}
+
+.carousel-inner{
+    overflow:visible;
+    padding: -40px;
+}
+
+.carousel-indicators li{
+    background-color: #0000ff;
+   
+}
+.carousel-indicators .active {
+    background-color: #ffff99;
+}
+
+.carousel-control.right {
+    opacity:0.1;
+}
+
+.carousel-control.left {
+    opacity:0.1;
+}
+
+.glyphicon.glyphicon-chevron-right{
+   color:blue;
+}
+
+.glyphicon.glyphicon-chevron-left{
+   color:blue;
+}
