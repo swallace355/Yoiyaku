@@ -31,7 +31,7 @@ if(isset($_POST['send'])){
         <script type="text/javascript"  src="form-validate.js"></script> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        
     </head>
     <body>
         <div id="main">
@@ -44,17 +44,17 @@ if(isset($_POST['send'])){
                     <div id="tagline">
                         
                     <ul id="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#home-anchor">Home</a></li>
+                        <li><a href="#services-anchor">Services</a></li>
+                        <li><a href="#about-anchor">About</a></li>
+                        <li><a href="#contact-anchor">Contact</a></li>
+                        <li><a href="#portfolio-anchor">Portfolio</a></li>
                     </ul>
                     </div>
                     <div style="clear:both"></div>
            
                 </div><!--End of Header-->
-            
+                <a name="home-anchor"></a>
                 <div id="content" class="well">
                     <h2 class="bold-text" align="center">Japanese to English Translation</h2>
                     <h3 align="center">Contact me for a <span style="color: red">FREE</span> quote!</h3>
@@ -70,6 +70,7 @@ if(isset($_POST['send'])){
                         free to contact me with your translation needs and I’ll get back to you with a free quote. 
                     <p>I look forward to working with you! </p>
                     <hr>
+                    <a name="services-anchor"></a>                    
                     <div id="services-specialties">
                         <h3 class="bold-text" align="center">Services & Specialties</h3>
                             <div id="services-main">
@@ -98,7 +99,7 @@ if(isset($_POST['send'])){
                          <div style="clear:both"></div>
                     </div><!--End of services-specialties-->
                     <hr>
-                    
+                    <a name="about-anchor"></a>
                     <h3 class="bold-text" align="center">About Me</h3>
                     <p>I had five years experience in the translation industry before I became an independent 
                         translator in 2016. I’ve translated documents and managed other translators within the 
@@ -106,7 +107,7 @@ if(isset($_POST['send'])){
                         while I taught English in Japan. I have a Master of Arts in Global Affairs from George Mason 
                         University and a Bachelor of Science in Software Engineering from University of Phoenix. </p>
                     <hr>
-                    
+                    <a name="contact-anchor"></a>
                     <h3 class="bold-text" align="center">Contact Me</h3>
                     <div id="contact" class="container">
                         <form name="contactform" action="" method="post" enctype="text/plain" onsubmit="return(validate());">
@@ -126,6 +127,7 @@ if(isset($_POST['send'])){
 
                     </div><!--End of Contact-->
                     <hr>
+                    <a name="portfolio-anchor"></a>
                     <h3 class="bold-text" align="center">Portfolio</h3>
                     <div id="myCarousel" class="carousel" data-ride="carousel"> 
                         <!-- Indicators -->
